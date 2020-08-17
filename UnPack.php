@@ -85,6 +85,18 @@ $unpack = new UnPack();
 $unpack->get_file( 'https://raw.githubusercontent.com/nsukonny/unpacker/master/example.csv.gz' );
 
 
+/**
+ * Short method for functions.php
+ * Image examples: https://d.pr/hCfNek and https://d.pr/MnerNb.
+ *
+ * 1. [custom_file_download("ftp://username:password@hostname.com/full/path/to/file.csv","csv")]
+ *
+ * 2. [custom_file_download("http://example.com/full/path/to/file.csv","csv")]
+ *
+ * @param $url
+ *
+ * @return mixed
+ */
 function custom_file_download_gz( $url ) {
 
 	$ch = curl_init();
