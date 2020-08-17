@@ -76,4 +76,4 @@ echo 'asdf';
 
 // Run script
 $unpack = new UnPack();
-$unpack->get_file( 'https://files.pythonhosted.org/packages/79/0c/d0eaa9380189a292121acab65199ac95b9209b45006ad8aa5266abd36943/backports.csv-1.0.7.tar.gz' );
+$unpack->get_file( 'https://github.com/nsukonny/unpacker/blob/master/test_csv.tar.gz' );
