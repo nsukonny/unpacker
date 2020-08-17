@@ -1,0 +1,29 @@
+"field name","english description","russian description",format
+name,name,"Наименование показателя",string
+code,code,"Код строки",string
+source,"The code source of financing for budgetary classification","Код источника финансирования по бюджетной классификации",string
+consolidated,"the consolidated budget of the Russian Federation and the territorial state extra-budgetary fund","консолидированный бюджет субъекта Российской Федерации и территориального государственного внебюджетного фонда",string
+amount,"amount to be excluded under the consolidated budget of the subject of the Russian Federation and budgets of territorial state extra-budgetary fund","суммы подлежащие исключению в рамках консолидированного бюджета субъекта Российской Федерации и бюджета территориального государственного внебюджетного фонда",string
+budget,"the consolidated budget of the Russian Federation","консолидированный бюджет субъекта Российской Федерации",string
+,,,string
+excluded,"amount to be excluded in the framework of the consolidated budget of the Russian Federation","суммы подлежащие исключению в рамках консолидированного бюджета субъекта Российской Федерации",string
+subject,"budget of a subject of the Russian Federation","бюджет субъекта Российской Федерации",string
+intracity,"budgets of intracity municipal unions of cities of federal importance Moscow and St. Petersburg","бюджеты внутригородских муниципальных образований городов федерального значения Москвы и Санкт-Петербурга",string
+urban,"budgets of urban districts","бюджеты городских округов",string
+,,,string
+municipal,"the budgets of municipal districts","бюджеты муниципальных районов",string
+,,,string
+,,,string
+rural,"budgets of urban and rural settlements","бюджеты городских и сельских поселений",string
+territorial,"budgets of territorial state extra-budgetary fund","бюджет территориального государственного внебюджетного фонда",string
+consolidatedbudget,"the consolidated budget of the Russian Federation and the territorial state extra-budgetary fund","консолидированный бюджет субъекта Российской Федерации и территориального государственного внебюджетного фонда",string
+amounttobeexcluded,"amount to be excluded under the consolidated budget of the subject of the Russian Federation and budgets of territorial state extra-budgetary fund","суммы подлежащие исключению в рамках консолидированного бюджета субъекта Российской Федерации и бюджета территориального государственного внебюджетного фонда",string
+theconsolidatedbudget,"the consolidated budget of the Russian Federation","консолидированный бюджет субъекта Российской Федерации",string
+,,,string
+framework,"amount to be excluded in the framework of the consolidated budget of the Russian Federation","суммы подлежащие исключению в рамках консолидированного бюджета субъекта Российской Федерации",string
+ofasubject,"budget of a subject of the Russian Federation","бюджет субъекта Российской Федерации",string
+ntracitymunicipal,"budgets of intracity municipal unions of cities of federal importance Moscow and St. Petersburg","бюджеты внутригородских муниципальных образований городов федерального значения Москвы и Санкт-Петербурга",string
+urbandistricts,"budgets of urban districts","бюджеты городских округов",string
+municipaldistricts,"the budgets of municipal districts","бюджеты муниципальных районов",string
+ruralsettlements,"budgets of urban and rural settlements","бюджеты городских и сельских поселений",string
+territorialstate,"budgets of territorial state extra-budgetary fund","бюджет территориального государственного внебюджетного фонда",string
