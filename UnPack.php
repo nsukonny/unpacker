@@ -3,7 +3,7 @@
  * Short method for functions.php
  * Image examples: https://d.pr/hCfNek and https://d.pr/MnerNb.
  *
- * 1. [custom_file_download_gz("ftp://rospapergirl1:asdf*1235!1@aftp.linksynergy.com/45658_3732636_mp.txt.gz")]
+ * 1. [custom_file_download_gz("ftp://user:password@aftp.linksynergy.com/45658_3732636_mp.txt.gz")]
  *
  * @param $url
  *
