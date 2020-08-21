@@ -3,7 +3,7 @@
  * Short method for functions.php
  * Image examples: https://d.pr/hCfNek and https://d.pr/MnerNb.
  *
- * 1. [custom_file_download_gz("ftp://user:password@aftp.linksynergy.com/45658_3732636_mp.txt.gz")]
+ * 1. [custom_file_download_gz("ftp://rospapergirl1:asdf*1235!1@aftp.linksynergy.com/45658_3732636_mp.txt.gz")]
  *
  * @param $url
  *
@@ -11,16 +11,23 @@
  */
 function custom_file_download_gz( $url ) {
 
-	$ch = curl_init();
-	curl_setopt( $ch, CURLOPT_URL, $url );
-	curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1 );
-	curl_setopt( $ch, CURLOPT_CUSTOMREQUEST, "GET" );
+	$is_ftp = 0 !== strpos( 'ftp://', $url );
 
-	$result = curl_exec( $ch );
-	if ( curl_errno( $ch ) ) {
-		exit( 'Error:' . curl_error( $ch ) );
+	if ( $is_ftp ) {
+		$result = file_get_contents( $url );
+	} else {
+		$ch = curl_init();
+		curl_setopt( $ch, CURLOPT_URL, $url );
+		curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1 );
+		curl_setopt( $ch, CURLOPT_CUSTOMREQUEST, "GET" );
+		curl_setopt( $ch, CURLOPT_RETURNTRANSFER, true );
+
+		$result = curl_exec( $ch );
+		if ( curl_errno( $ch ) ) {
+			exit( 'Error:' . curl_error( $ch ) );
+		}
+		curl_close( $ch );
 	}
-	curl_close( $ch );
 
 	$uploads = array( 'basedir' => __DIR__, 'baseurl' => 'https://caraudiodiscountdepot.com/wp-content/uploads' );
 	if ( function_exists( 'wp_upload_dir' ) ) {
@@ -49,4 +56,5 @@ function custom_file_download_gz( $url ) {
 	return str_replace( $uploads['basedir'], $uploads['baseurl'], $out_file_name );
 }
 
-echo custom_file_download_gz( 'https://raw.githubusercontent.com/nsukonny/unpacker/master/example.csv.gz' );
+//https://github.com/nsukonny/unpacker/blob/master/45658_3732636_mp.txt.gz?raw=true
+echo custom_file_download_gz( 'https://raw.githubusercontent.com/nsukonny/unpacker/master/45658_3732636_mp.txt.gz' );
