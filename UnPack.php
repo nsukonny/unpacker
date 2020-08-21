@@ -3,9 +3,7 @@
  * Short method for functions.php
  * Image examples: https://d.pr/hCfNek and https://d.pr/MnerNb.
  *
- * 1. [custom_file_download("ftp://username:password@hostname.com/full/path/to/file.csv","csv")]
- *
- * 2. [custom_file_download("http://example.com/full/path/to/file.csv","csv")]
+ * 1. [custom_file_download_gz("ftp://user:password@aftp.linksynergy.com/45658_3732636_mp.txt.gz")]
  *
  * @param $url
  *
@@ -36,7 +34,7 @@ function custom_file_download_gz( $url ) {
 	file_put_contents( $filename, $result );
 
 	$buffer_size   = 4096;
-	$out_file_name = str_replace( '.gz', '.csv', $filename );
+	$out_file_name = str_replace( '.gz', '', $filename );
 
 	$file     = gzopen( $filename, 'rb' );
 	$out_file = fopen( $out_file_name, 'wb' );
